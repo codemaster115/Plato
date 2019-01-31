@@ -5,12 +5,13 @@ import 'jest-styled-components';
 
 import SearchBarComponent from '../SearchBar';
 
-test('Compare snapshots', () => {
-  const Component = renderer.create(<SearchBarComponent />);
-
-  const Tree = Component.toJSON();
-  expect(Tree).toMatchSnapshot();
-});
-test('Renders without crashing', () => {
-  mount(<SearchBarComponent />);
-});
+describe('<SearchBar/>', () => {
+  it('Compare snapshots', () => {
+    const tree = renderer.create(<SearchBarComponent />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  
+  it('Renders without crashing', () => {
+    mount(<SearchBarComponent />);
+  });
+})

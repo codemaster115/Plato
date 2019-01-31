@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Compare snapshots 1`] = `
+exports[`Signup Field Compare snapshots 1`] = `
 <div>
   <div
     className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"

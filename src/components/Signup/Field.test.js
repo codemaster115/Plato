@@ -1,18 +1,25 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Adapter from 'enzyme-adapter-react-16';
 import 'jest-styled-components';
+import { Input } from '@material-ui/core';
+
 import Field from './Field';
 
-Enzyme.configure({ adapter: new Adapter() });
+describe('Signup Field', () => {
+  it('Compare snapshots', () => {
+    const Component = renderer.create(<Field />);
 
-test('Compare snapshots', () => {
-  const Component = renderer.create(<Field />);
+    const Tree = Component.toJSON();
+    expect(Tree).toMatchSnapshot();
+  });
 
-  const Tree = Component.toJSON();
-  expect(Tree).toMatchSnapshot();
-});
-test('Renders without crashing', () => {
-  mount(<Field />);
+  it('Renders without crashing', () => {
+    mount(<Field />);
+  });
+
+  it('Renders 5 input field', () => {
+    const wrapper = shallow(<Field />);
+    expect(wrapper.find(Input)).toHaveLength(5);
+  });
 });

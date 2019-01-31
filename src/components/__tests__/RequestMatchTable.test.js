@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { BackNavButton } from '../BackNav';
+import RquestMatchTable from '../RequestMatchTable';
 
 describe('<BackNav/>', () => {
   let wrapper;
   beforeAll(() => {
-    wrapper = shallow(<BackNavButton/>);
+    wrapper = shallow(<RquestMatchTable/>);
   });
 
   it('match snapshot', () => {

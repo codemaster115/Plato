@@ -1,17 +1,18 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import Typography from '../Typography';
+import Typography, { StyledTypography } from '../Typography';
 
-test('Compare snapshots', () => {
-  const Component = renderer.create(<Typography />);
+describe('<Typograph/>', () => {
+  it('compare snapshots', () => {
+    const tree = renderer.create(<Typography typography={'test'} />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-  const Tree = Component.toJSON();
-  expect(Tree).toMatchSnapshot();
-});
-
-test('Renders without crashing', () => {
-  mount(<Typography />);
+  it('should render correct children', () => {
+    const component = shallow(<Typography typography={'test'} />).dive();
+    expect(component.props().children).toEqual('test');
+  });
 });

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BackNav/> match snapshot 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.button
+    className="fa fa-chevron-left inner-element bubble-element"
+  />
+  <styled.span>
+    Back
+  </styled.span>
+</styled.div>
+`;

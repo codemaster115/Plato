@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 
-const StyledTypography = styled(Typography)`
+export const StyledTypography = styled(Typography)`
     fontFamily: "Source Sans Pro" !important;
     font-size: 24px !important;
     font-weight: bold !important;

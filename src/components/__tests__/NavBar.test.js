@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { BackNavButton } from '../BackNav';
+import NavBar from '../NavBar';
 
 describe('<BackNav/>', () => {
   let wrapper;
   beforeAll(() => {
-    wrapper = shallow(<BackNavButton/>);
+    wrapper = shallow(<NavBar/>);
   });
 
   it('match snapshot', () => {

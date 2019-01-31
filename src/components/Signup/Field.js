@@ -1,15 +1,11 @@
 import React from 'react';
-import {
-  FormControl, 
-  Input, 
-  InputLabel
- } from '@material-ui/core';
+import { FormControl, Input, InputLabel } from '@material-ui/core';
 
 class ButtonComponent extends React.Component {
   render() {
     return (
       <div>
-         <FormControl margin="normal" required fullWidth>
+        <FormControl margin="normal" required fullWidth>
           <InputLabel htmlFor="name">First Name</InputLabel>
           <Input id="first_name" name="first_name" autoFocus />
         </FormControl>
@@ -23,11 +19,23 @@ class ButtonComponent extends React.Component {
         </FormControl>
         <FormControl margin="normal" required fullWidth>
           <InputLabel htmlFor="password">Password</InputLabel>
-          <Input name="password" type="password" id="password" autoComplete="current-password" />
+          <Input
+            name="password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+          />
         </FormControl>
         <FormControl margin="normal" required fullWidth>
-          <InputLabel htmlFor="confirm_password">Confirm your Password</InputLabel>
-          <Input name="confirm_password" type="password" id="confirm_password" autoComplete="current-password" />
+          <InputLabel htmlFor="confirm_password">
+            Confirm your Password
+          </InputLabel>
+          <Input
+            name="confirm_password"
+            type="password"
+            id="confirm_password"
+            autoComplete="current-password"
+          />
         </FormControl>
       </div>
     );

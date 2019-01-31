@@ -1,41 +1,45 @@
 import React from 'react';
-import {
-  FormControl, 
-  Input, 
-  InputLabel, 
-  Link
- } from '@material-ui/core';
+import { FormControl, Input, InputLabel, Link } from '@material-ui/core';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
-import { login } from '../../ducks/login';
 
 const StyledLink = styled(Link)`
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 5px 0px 10px !important;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 5px 0px 10px !important;
 `;
 
-class ButtonComponent extends React.Component {
-
-  onEmailChange = (e) => {    
+export default class ButtonComponent extends React.Component {
+  onEmailChange = e => {
     this.props.userNameChange(e.target.value);
-  }
-  
-  onPasswordChange = (e) => {    
+  };
+
+  onPasswordChange = e => {
     this.props.passwordChange(e.target.value);
-  }
+  };
 
   render() {
     return (
-      <div>         
+      <div>
         <FormControl margin="normal" required fullWidth>
           <InputLabel htmlFor="email">Email Address</InputLabel>
-          <Input id="email" name="email" autoComplete="email" autoFocus  onChange={this.onEmailChange} />
+          <Input
+            id="email"
+            name="email"
+            autoComplete="email"
+            autoFocus
+            onChange={this.onEmailChange}
+          />
         </FormControl>
         <FormControl margin="normal" required fullWidth>
           <InputLabel htmlFor="password">Password</InputLabel>
-          <Input name="password" type="password" id="password" autoComplete="current-password" onChange={this.onPasswordChange}/>
+          <Input
+            name="password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+            onChange={this.onPasswordChange}
+          />
         </FormControl>
         <StyledLink
           component="button"
@@ -43,16 +47,10 @@ class ButtonComponent extends React.Component {
           onClick={() => {
             this.onValChange();
           }}
-          >
+        >
           Forgot your password?
-        </StyledLink>       
+        </StyledLink>
       </div>
     );
   }
 }
-
-const mapDispatchToProps = {
-  login,
-}
-
-export default connect(null, mapDispatchToProps)(ButtonComponent);

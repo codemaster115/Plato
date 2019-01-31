@@ -25,7 +25,7 @@ const BackItem = styled.div`
     padding: 0px 70px;
 `;
 
-class BackNavButton extends React.Component {
+export class BackNavButton extends React.Component {
   render() {
     return (
       <BackItem onClick={() => {this.props.push('/')}}>

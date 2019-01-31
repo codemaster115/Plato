@@ -1,34 +1,32 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import StyledTypography from '../components/Typography'; 
+import StyledTypography from '../components/Typography';
 import Form from '../components/Form';
 
-class SignupLayoutContainer extends React.Component {
-
-  onValChange = (e) => {
+export class SignupLayoutContainer extends React.Component {
+  onValChange = e => {
     this.setState({ username: e.target.value });
-  }
+  };
 
-  render() {  
+  render() {
     return (
-            <div>                     
-              <StyledTypography typography="Sign up to Plato Back-office"/>
-              <Form path={this.props.pathname} />
-              </div>        
+      <div>
+        <StyledTypography typography="Sign up to Plato Back-office" />
+        <Form path={this.props.pathname} />
+      </div>
     );
   }
 }
 
-SignupLayoutContainer.propTypes = {  
-};
+SignupLayoutContainer.propTypes = {};
 
-const mapStateToProps = state => (
-  {
-    pathname: state.router.location.pathname,
-  }
-);
+const mapStateToProps = state => ({
+  pathname: state.router.location.pathname,
+});
 
-const mapDispatchToProps = { 
-}
+const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignupLayoutContainer);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(SignupLayoutContainer);

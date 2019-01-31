@@ -41,4 +41,4 @@ const mapDispatchToProps = {
 }
 
 
-export default connect(mapDispatchToProps)(BackNavButton);
+export default connect(null, mapDispatchToProps)(BackNavButton);

@@ -1,16 +1,16 @@
 {
   "parser": "babel-eslint",
-  "extends": ["airbnb", "prettier", "prettier/react"],
+  "extends": "react-app",
   "plugins": ["react"],
   "rules": {
     "linebreak-style": 0,
     "react/prefer-stateless-function": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/destructuring-assignment": ["enabled", "always"],
+    "react/destructuring-assignment": [1, "always"],
     "import/no-named-as-default": 0,
     "react/self-closing-comp": "off",
     "react/forbid-prop-types": [
-      "enabled",
+      1,
       {
         "forbid": ["string"],
         "checkContextTypes": "boolean",

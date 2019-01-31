@@ -1,18 +1,16 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
+import AllMentees from '../AllMentees';
 
-import Button from '../Button';
-
-describe('Profile <Button/>', () => {
+describe("<AllMenteesContainer/>", () => {
   it('Compare snapshots', () => {
-    const Component = renderer.create(<Button />);
-
+    const Component = renderer.create(<AllMentees />);
+  
     const Tree = Component.toJSON();
     expect(Tree).toMatchSnapshot();
   });
-
   it('Renders without crashing', () => {
-    mount(<Button />);
+    mount(<AllMentees />);
   });
-});
+})

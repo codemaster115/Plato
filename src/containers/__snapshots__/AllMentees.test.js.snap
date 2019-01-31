@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Compare snapshots 1`] = `
+.c0 {
+  width: 80%;
+}
+
+.c1 {
+  width: 100%;
+}
+
+<div>
+  <div
+    className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 c0"
+  >
+    <label
+      className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+      data-shrink={false}
+      htmlFor="search"
+    >
+      Search
+      <span
+        className="MuiFormLabel-asterisk-22"
+      >
+         *
+      </span>
+    </label>
+    <div
+      className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-formControl-37 MuiInput-formControl-24"
+      onClick={[Function]}
+    >
+      <input
+        aria-describedby={undefined}
+        aria-invalid={false}
+        autoComplete={undefined}
+        autoFocus={true}
+        className="MuiInputBase-input-46 MuiInput-input-31"
+        defaultValue={undefined}
+        disabled={false}
+        id="search"
+        name="search"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={true}
+        rows={undefined}
+        type="text"
+        value={undefined}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    All mentees page!
+  </div>
+</div>
+`;

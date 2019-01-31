@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfileOverViewComponent/> Compare snapshots 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  grid-template-rows: 30px;
+  height: 210px;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: 90px 100px;
+  grid-gap: 10px;
+  grid-template-rows: 30px;
+  height: 100%;
+}
+
+.c11 {
+  display: grid;
+  grid-gap: 4px;
+  grid-template-rows: 25px;
+}
+
+.c3 {
+  display: block;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.c4 {
+  display: block;
+  width: 50px;
+  margin: auto;
+}
+
+.c2 {
+  display: grid;
+  grid-template-rows: 110px 60px;
+  height: 100%;
+}
+
+.c5 {
+  display: grid;
+  grid-template-rows: 35px 20px 25px 25px 25px;
+  gap: 10px;
+  height: 100%;
+}
+
+.c6 {
+  box-sizing: border-box;
+  height: 35px;
+  width: 231.922px;
+  overflow: visible;
+  font-family: Lato;
+  font-size: 31px;
+  font-weight: bold;
+  color: rgb(51,51,51);
+  line-height: 1;
+}
+
+.c7 {
+  box-sizing: border-box;
+  height: 20px;
+  width: 231.922px;
+  overflow: visible;
+  font-family: Lato;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(51,51,51);
+  line-height: 1;
+}
+
+.c8 {
+  box-sizing: border-box;
+  height: 25px;
+  width: 231.922px;
+  overflow: visible;
+  font-family: Lato;
+  font-size: 14px;
+  color: rgb(112,112,112);
+  line-height: 1.4;
+  padding-top: 3.5px;
+  word-break: break-word;
+}
+
+.c9 {
+  box-sizing: border-box;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: rgba(69,75,128,0.7);
+  font-size: 25px;
+  border-radius: 4px;
+}
+
+.c10 {
+  box-sizing: border-box;
+  height: 25px;
+  width: 231.922px;
+  overflow: visible;
+  font-family: Lato;
+  font-size: 14px;
+  color: rgb(112,112,112);
+  line-height: 1.4;
+  padding-top: 3.5px;
+}
+
+.c12 {
+  box-sizing: border-box;
+  height: 25px;
+  width: 411.418px;
+  overflow: visible;
+  font-family: Lato;
+  font-size: 14px;
+  color: rgb(112,112,112);
+  line-height: 1.4;
+  padding-top: 3.5px;
+}
+
+.c13 {
+  box-sizing: border-box;
+  height: 25px;
+  width: 411.418px;
+  overflow: visible;
+  font-family: Lato;
+  font-size: 14px;
+  color: rgb(112,112,112);
+  line-height: 1.4;
+  padding-top: 32px;
+}
+
+<div
+  className="MuiPaper-root-2 MuiPaper-elevation1-5 MuiPaper-rounded-3 MuiCard-root-1"
+>
+  <div
+    className="MuiCardContent-root-29 c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          alt="profile"
+          className="c3"
+          src=""
+        />
+        <img
+          alt="profile"
+          className="c4"
+          src=""
+        />
+      </div>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+        />
+        <div
+          className="c7"
+        >
+           at 
+        </div>
+        <div
+          className="c8"
+        />
+        <button
+          className="fa fa-linkedin-square inner-element bubble-element clickable-element c9"
+        />
+        <div
+          className="c10"
+        >
+          Status: 
+        </div>
+      </div>
+    </div>
+    <div
+      className="c11"
+    >
+      <div
+        className="c12"
+      >
+        <strong>
+          Team size: 
+        </strong>
+      </div>
+      <div
+        className="c12"
+      >
+        <strong>
+          Years of management experience: 
+        </strong>
+      </div>
+      <div
+        className="c12"
+      >
+        <strong>
+          Number of employees in the company: 
+        </strong>
+        
+      </div>
+      <div
+        className="c13"
+      >
+        <strong>
+          Notes: 
+        </strong>
+      </div>
+    </div>
+  </div>
+</div>
+`;

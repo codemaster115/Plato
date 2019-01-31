@@ -1,11 +1,8 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
+import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Adapter from 'enzyme-adapter-react-16';
-import 'jest-styled-components';
-import MenteeCard from './MenteeCard';
 
-Enzyme.configure({ adapter: new Adapter() });
+import MenteeCard from '../MenteeCard';
 
 test('Compare snapshots', () => {
   const Component = renderer.create(<MenteeCard />);

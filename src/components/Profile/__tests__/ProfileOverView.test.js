@@ -2,17 +2,17 @@ import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import BriefCardComponent from '../BriefCard';
+import { ProfileOverViewComponent } from '../ProfileOverView';
 
-describe('Profile <BriefCard/>', () => {
+describe('<ProfileOverViewComponent/>', () => {
   it('Compare snapshots', () => {
-    const Component = renderer.create(<BriefCardComponent />);
+    const Component = renderer.create(<ProfileOverViewComponent />);
 
     const Tree = Component.toJSON();
     expect(Tree).toMatchSnapshot();
   });
 
   it('Renders without crashing', () => {
-    mount(<BriefCardComponent />);
+    mount(<ProfileOverViewComponent />);
   });
 });

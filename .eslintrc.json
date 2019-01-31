@@ -1,16 +1,21 @@
 {
-    "parser": "babel-eslint",
-    "extends":  ["airbnb", "prettier", "prettier/react"],
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "linebreak-style": 0,
-        "react/prefer-stateless-function": 0,
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react/destructuring-assignment": ["enabled", "always"],
-        "import/no-named-as-default": 0,
-        "react/self-closing-comp": "off",
-        "react/forbid-prop-types": ["enabled", { "forbid": ["string"], "checkContextTypes": "boolean", "checkChildContextTypes": "boolean" }],        
-    }
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["react"],
+  "rules": {
+    "linebreak-style": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/destructuring-assignment": ["enabled", "always"],
+    "import/no-named-as-default": 0,
+    "react/self-closing-comp": "off",
+    "react/forbid-prop-types": [
+      "enabled",
+      {
+        "forbid": ["string"],
+        "checkContextTypes": "boolean",
+        "checkChildContextTypes": "boolean"
+      }
+    ]
+  }
 }

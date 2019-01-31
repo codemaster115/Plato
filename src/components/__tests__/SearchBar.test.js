@@ -1,7 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import 'jest-styled-components';
 
 import SearchBarComponent from '../SearchBar';
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Compare snapshots 1`] = `
+exports[`Profile <BriefCard/> Compare snapshots 1`] = `
 .c1 {
   box-sizing: border-box;
   height: 30px;

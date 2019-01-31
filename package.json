@@ -99,6 +99,7 @@
     "prettier": "^1.16.1",
     "pretty-quick": "^1.10.0",
     "react-scripts": "^1.0.16",
+    "react-test-renderer": "^16.7.0",
     "stylelint": "^9.1.1",
     "stylelint-config-prettier": "^4.0.0"
   }

@@ -1,11 +1,9 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
+import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Adapter from 'enzyme-adapter-react-16';
 import 'jest-styled-components';
-import SearchBarComponent from './SearchBar';
 
-Enzyme.configure({ adapter: new Adapter() });
+import SearchBarComponent from '../SearchBar';
 
 test('Compare snapshots', () => {
   const Component = renderer.create(<SearchBarComponent />);

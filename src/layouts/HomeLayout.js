@@ -12,56 +12,54 @@ import NavBar from '../components/NavBar';
 import { login } from '../ducks/login';
 
 const Div = styled.div`
-    display: flex;
-    background-color: rgb(230, 235, 241);
+  display: flex;
+  background-color: rgb(230, 235, 241);
 `;
 
 const StyledToolbar = styled(Toolbar)`
-    height: 64px;
+  height: 64px;
 `;
 
 const Content = styled.main`
-    position: absolute;
-    width: 100%;
-    padding: 24px 10%;
-    @media (min-width: 1280px) {
-      margin-left: 240px;
-      width: calc(100% - 240px);
-    }
+  position: absolute;
+  width: 100%;
+  padding: 24px 10%;
+  @media (min-width: 1280px) {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+  }
 `;
 
 class HomeLayout extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      Authorized: false,    
+      Authorized: false,
     };
   }
 
   componentDidMount() {
-    if (!this.props.isAuthorized) {      
+    if (!this.props.isAuthorized) {
       this.props.push('./login');
-    }
-    else {
-      this.setState({Authorized:true});
+    } else {
+      this.setState({ Authorized: true });
     }
   }
 
-  UNSAFE_componentWillReceiveProps({ isAuthorized }) {    
-    this.setState({Authorized: isAuthorized});    
+  UNSAFE_componentWillReceiveProps({ isAuthorized }) {
+    this.setState({ Authorized: isAuthorized });
     if (!isAuthorized) {
       this.props.push('./login');
     }
   }
 
-  render() {    
+  render() {
     return (
       <Div>
-        <CssBaseline />        
-        <NavBar path={this.props.pathname}/>
+        <CssBaseline />
+        <NavBar path={this.props.pathname} />
         <Content>
-          <StyledToolbar/>           
+          <StyledToolbar />
           {this.props.children}
         </Content>
       </Div>
@@ -70,19 +68,20 @@ class HomeLayout extends React.Component {
 }
 
 HomeLayout.propTypes = {
-  children: PropTypes.object.isRequired,  
+  children: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => (
-  {
-    pathname: state.router.location.pathname,
-    isAuthorized: state.Login.isAuthorized,
-  }
-);
+const mapStateToProps = state => ({
+  pathname: state.router.location.pathname,
+  isAuthorized: state.Login.isAuthorized,
+});
 
 const mapDispatchToProps = {
   login,
   push,
-}
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeLayout);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(HomeLayout);

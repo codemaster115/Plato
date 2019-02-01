@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Compare snapshots 1`] = `
+exports[`AuthLayout Compare snapshots 1`] = `
 .c0 {
   display: block;
   width: 400px;

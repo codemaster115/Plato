@@ -25,26 +25,17 @@ exports[`<SearchBar/> Compare snapshots 1`] = `
     onClick={[Function]}
   >
     <input
-      aria-describedby={undefined}
       aria-invalid={false}
-      autoComplete={undefined}
       autoFocus={true}
       className="MuiInputBase-input-46 MuiInput-input-31"
-      defaultValue={undefined}
       disabled={false}
       id="search"
       name="search"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      onKeyDown={undefined}
-      onKeyUp={undefined}
-      placeholder={undefined}
-      readOnly={undefined}
       required={true}
-      rows={undefined}
       type="text"
-      value={undefined}
     />
   </div>
 </div>

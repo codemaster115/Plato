@@ -92,47 +92,13 @@ exports[`Profile <BriefCard/> Compare snapshots 1`] = `
 }
 
 .c14 {
-  box-sizing: border-box;
-  height: 30px;
-  width: 94px;
-  background: none rgb(85,90,191);
-  border-radius: 4px;
-  box-shadow: rgb(238,241,244) 0px 2px 7px 0px;
-  cursor: pointer;
-  color: white;
-  float: right;
-  font-family: "Source Sans Pro";
-  font-size: 14px;
-  font-weight: 400;
-  padding: 8px 11px;
   padding: 8px 26px;
   background-color: rgb(199,199,199);
   margin-top: 5px;
 }
 
-.c14:hover {
-  opacity: 0.9;
-}
-
 .c12 {
-  box-sizing: border-box;
-  height: 30px;
-  width: 94px;
-  background: none rgb(85,90,191);
-  border-radius: 4px;
-  box-shadow: rgb(238,241,244) 0px 2px 7px 0px;
-  cursor: pointer;
-  color: white;
-  float: right;
-  font-family: "Source Sans Pro";
-  font-size: 14px;
-  font-weight: 400;
-  padding: 8px 11px;
   padding: 8px 13px;
-}
-
-.c12:hover {
-  opacity: 0.9;
 }
 
 .c2 {
@@ -195,7 +161,6 @@ exports[`Profile <BriefCard/> Compare snapshots 1`] = `
                 >
                   <div
                     aria-haspopup="true"
-                    aria-owns={undefined}
                     aria-pressed="false"
                     className="MuiSelect-select-53 MuiSelect-selectMenu-56 MuiInputBase-input-82 MuiInput-input-67"
                     id="select-"
@@ -215,23 +180,12 @@ exports[`Profile <BriefCard/> Compare snapshots 1`] = `
                     />
                   </div>
                   <input
-                    aria-describedby={undefined}
-                    autoComplete={undefined}
-                    autoFocus={undefined}
-                    defaultValue={undefined}
-                    id={undefined}
-                    name={undefined}
-                    onKeyDown={undefined}
-                    onKeyUp={undefined}
-                    placeholder={undefined}
-                    rows={undefined}
                     type="hidden"
                     value=""
                   />
                   <svg
                     aria-hidden="true"
                     className="MuiSvgIcon-root-89 MuiSelect-icon-58"
-                    color={undefined}
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -266,26 +220,15 @@ exports[`Profile <BriefCard/> Compare snapshots 1`] = `
               onClick={[Function]}
             >
               <input
-                aria-describedby={undefined}
                 aria-invalid={false}
-                autoComplete={undefined}
-                autoFocus={undefined}
                 className="MuiInputBase-input-82 MuiInput-input-67 MuiInputBase-inputMarginDense-83 MuiInput-inputMarginDense-68"
-                defaultValue={undefined}
                 disabled={false}
                 id="standard-dense"
-                name={undefined}
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
-                onKeyDown={undefined}
-                onKeyUp={undefined}
-                placeholder={undefined}
-                readOnly={undefined}
                 required={false}
-                rows={undefined}
                 type="text"
-                value={undefined}
               />
             </div>
           </div>
@@ -304,25 +247,15 @@ exports[`Profile <BriefCard/> Compare snapshots 1`] = `
               onClick={[Function]}
             >
               <textarea
-                aria-describedby={undefined}
                 aria-invalid={false}
-                autoComplete={undefined}
-                autoFocus={undefined}
                 className="MuiInputBase-input-82 MuiInput-input-67 MuiInputBase-inputMultiline-84 MuiInput-inputMultiline-69 MuiInputBase-inputMarginDense-83 MuiInput-inputMarginDense-68"
-                defaultValue={undefined}
                 disabled={false}
                 id="standard-dense"
-                name={undefined}
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
-                onKeyDown={undefined}
-                onKeyUp={undefined}
-                placeholder={undefined}
-                readOnly={undefined}
                 required={false}
                 rows={5}
-                value={undefined}
               />
             </div>
           </div>
@@ -341,26 +274,15 @@ exports[`Profile <BriefCard/> Compare snapshots 1`] = `
               onClick={[Function]}
             >
               <input
-                aria-describedby={undefined}
                 aria-invalid={false}
-                autoComplete={undefined}
-                autoFocus={undefined}
                 className="MuiInputBase-input-82 MuiInput-input-67 MuiInputBase-inputMarginDense-83 MuiInput-inputMarginDense-68"
-                defaultValue={undefined}
                 disabled={false}
                 id="standard-dense"
-                name={undefined}
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
-                onKeyDown={undefined}
-                onKeyUp={undefined}
-                placeholder={undefined}
-                readOnly={undefined}
                 required={false}
-                rows={undefined}
                 type="text"
-                value={undefined}
               />
             </div>
           </div>
@@ -382,7 +304,7 @@ exports[`Profile <BriefCard/> Compare snapshots 1`] = `
             className="c11"
           >
             <div
-              className="c12"
+              className="c12 c1"
             >
               Add Mentor
             </div>
@@ -394,7 +316,7 @@ exports[`Profile <BriefCard/> Compare snapshots 1`] = `
               Missing CC!
             </div>
             <div
-              className="c14"
+              className="c14 c1"
             >
               Submit
             </div>

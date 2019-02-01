@@ -106,6 +106,10 @@ const AccountStatusContainer = styled.div`
 const Nav = styled.nav`
   width: 240px;
   flex-shrink: 0;
+  
+  @media (max-width: 1280px) {
+    width: auto;
+  }
 `;
 
 const StyledExpansionPanel = styled(ExpansionPanel)`

@@ -8,17 +8,18 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import NavBar from '../components/NavBar';
 
 const Div = styled.div`
+  display: flex;
   background-color: rgb(230, 235, 241);
 `;
 
 const Content = styled.main`
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   padding: 24px 10%;
-  @media (min-width: 1280px) {
+  /* @media (min-width: 1280px) {
     margin-left: 240px;
     width: calc(100% - 240px);
-  }
+  } */
   @media (max-width: 1010px) {
     width: 100% !important;
     padding: 24px 102px;

@@ -6,7 +6,7 @@ import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 
 const SearchBar = styled(FormControl)`
-    width: 80%;
+    width: 100%;
 `;
 
 class SearchBarComponent extends React.Component {

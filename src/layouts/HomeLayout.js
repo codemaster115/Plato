@@ -21,13 +21,13 @@ const StyledToolbar = styled(Toolbar)`
 `;
 
 const Content = styled.main`
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   padding: 24px 10%;
-  @media (min-width: 1280px) {
+  /* @media (min-width: 1280px) {
     margin-left: 240px;
     width: calc(100% - 240px);
-  }
+  } */
 `;
 
 class HomeLayout extends React.Component {

@@ -2,7 +2,7 @@
 
 exports[`<AllMenteesContainer/> Compare snapshots 1`] = `
 .c0 {
-  width: 80%;
+  width: 100%;
 }
 
 .c1 {
